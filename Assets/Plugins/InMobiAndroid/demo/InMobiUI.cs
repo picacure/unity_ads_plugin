@@ -16,22 +16,23 @@ public class InMobiUI : MonoBehaviourGUI
 
         if( GUILayout.Button( "Initialize" ) )
         {
-            var dict = new Dictionary<string, string>();
-            dict.Add( "age", "20" );
-            dict.Add( "gender", "GENDER_MALE" );
-            dict.Add( "education", "EDUCATION_HIGHSCHOOLORLESS" );
-            dict.Add( "ethnicity", "ETHNICITY_ASIAN" );
-            dict.Add( "dob", "1984-11-12" );
-            dict.Add( "income", "200" );
-            dict.Add( "maritalStatus", "MARITAL_STATUS_SINGLE" );
-            dict.Add( "hasChildren", "TRUE" );
-            dict.Add( "sexualOrientation", "SEXUAL_ORIENTATION_STRAIGHT" );
-            dict.Add( "language", "eng" );
-            dict.Add( "postalCode", "11111" );
-            dict.Add( "areaCode", "435" );
-            dict.Add( "deviceIdMasks", "EXCLUDE_ODIN1");
-            dict.Add( "interests", "swimming, adventure sports" );
-            InMobiAndroid.init( _appId, dict);
+            //var dict = new Dictionary<string, string>();
+            //dict.Add( "age", "20" );
+            //dict.Add( "gender", "GENDER_MALE" );
+            //dict.Add( "education", "EDUCATION_HIGHSCHOOLORLESS" );
+            //dict.Add( "ethnicity", "ETHNICITY_ASIAN" );
+            //dict.Add( "dob", "1984-11-12" );
+            //dict.Add( "income", "200" );
+            //dict.Add( "maritalStatus", "MARITAL_STATUS_SINGLE" );
+            //dict.Add( "hasChildren", "TRUE" );
+            //dict.Add( "sexualOrientation", "SEXUAL_ORIENTATION_STRAIGHT" );
+            //dict.Add( "language", "eng" );
+            //dict.Add( "postalCode", "11111" );
+            //dict.Add( "areaCode", "435" );
+            //dict.Add( "deviceIdMasks", "EXCLUDE_ODIN1");
+            //dict.Add( "interests", "swimming, adventure sports" );
+            //InMobiAndroid.init(_appId, dict);
+            InMobiAndroid.init(_appId, null);
         }
 
 
@@ -91,7 +92,9 @@ public class InMobiUI : MonoBehaviourGUI
 
         if( GUILayout.Button( "Load Interstitial" ) )
         {
-            InMobiAndroid.loadInterstitial( "57333bc607224b919d75aedce28350f8" );
+
+            InMobiAndroid.loadInterstitial("c2879c6cb40d4bd2add0bfd627dd3d04");
+            //InMobiAndroid.loadInterstitial( "57333bc607224b919d75aedce28350f8" );
         }
 
 

@@ -54,11 +54,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Plugins\InMobi\InMobiSimple.cs" />
+    <Compile Include="Assets\Plugins\InMobi\InMobiTest.cs" />
     <Compile Include="Assets\Plugins\InMobiAndroid\InMobiAndroid.cs" />
     <Compile Include="Assets\Plugins\InMobiAndroid\InMobiAndroidManager.cs" />
     <Compile Include="Assets\Plugins\InMobiAndroid\demo\InMobiAndroidEventListener.cs" />
     <Compile Include="Assets\Plugins\InMobiAndroid\demo\InMobiUI.cs" />
-    <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
+    <None Include="Assets\Plugins\Android\InMobiAndroidManifest.xml" />
     <None Include="Assets\Plugins\InMobiAndroid\Manifest.xml" />
     <None Include="Assets\Plugins\P31RestKit.dll" />
   </ItemGroup>
